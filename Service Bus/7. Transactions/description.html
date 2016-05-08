@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=62DBC035A4A8AD76676CA11B61CB6C59" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/bbaae96c-224e-49fa-b126-0ffa05fb4baeCombined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=60546B18CCC226DE9D7A404EDD74623E" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Brokered Messaging: Transactions</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Brokered Messaging: Transactions</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Microsoft Azure, Service Bus
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Service Bus
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">8/13/2014</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Brokered-Messaging-8cd41d1e">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p>This sample demonstrates how to use the Windows Azure Service Bus messaging features within a transaction scope in order to ensure batches of messaging operations are committed atomically. See the Service Bus documentation for more information about the
+ Service Bus before exploring the samples.</p>
+<p>This sample demonstrates: sending and completing messages within a transaction scope; committing and aborting transactions.</p>
+<h1>Prerequisites</h1>
+<p>If you haven't already done so, please read the release notes document that explains how to sign up for a Windows Azure account and how to configure your environment.</p>
+<h1>Sample Flow</h1>
+<p>The sample flows in the following manner:</p>
+<ol>
+<li>Create a new queue on the Service Bus; </li><li>Send and complete messages within a transaction scope:
+<ol>
+<li>Send a plain text message to the newly created queue; </li><li>Peek lock the message from the queue; </li><li>Within a transaction scope, send a response message; </li><li>Within a transaction scope, complete the initial message; </li><li>Complete the transaction scope; </li><li>Receive the response message. </li></ol>
+</li><li>Send and complete messages within a transaction scope that rolls back:
+<ol>
+<li>Send a plain text message to the queue; </li><li>Peek lock the message from the queue; </li><li>Within a transaction scope, send a response message; </li><li>Within a transaction scope, complete the initial message; </li><li>Abandon the transaction scope; </li><li>Receive from the queue - since the transaction was not completed, the response message is not in the queue and the initial message is returned to the queue when its peek lock times out.
+</li></ol>
+</li><li>Clean up resources associated with the sample. </li></ol>
+<h1><br>
+Running the Sample</h1>
+<p>To run the sample:</p>
+<ol>
+<li>Build and run the sample in Visual Studio. </li><li>When prompted, enter your Service Bus connection string. </li></ol>
+<h2><strong>&nbsp;</strong></h2>
+<h2><strong>Expected Output</strong></h2>
+<p>Please provide a connection string to Service Bus (? for help): &lt;Your connection string&gt;</p>
+<p>Creating Queues...</p>
+<p>Scenario 1: Send/Complete in a Transaction and then Complete<br>
+Sending Message 'Message 1'<br>
+Peek-Lock the Message... Message 1<br>
+Inside Transaction 5378d67d-19f1-4d27-affa-3e93841be2aa:1<br>
+Sending Reply in a Transaction<br>
+Completing message in a Transaction<br>
+Marking the Transaction Scope as Completed<br>
+Receive the reply... Reply To - Message 1</p>
+<p>Press [Enter] to move to the next scenario.</p>
+<p><br>
+Scenario 2: Send/Complete in a Transaction and do not Complete<br>
+Sending Message 'Message 2'<br>
+Peek-Lock the Message... Message 2<br>
+Inside Transaction 5378d67d-19f1-4d27-affa-3e93841be2aa:2<br>
+Sending Reply in a Transaction<br>
+Completing message in a Transaction<br>
+Exiting the transaction scope without committing...<br>
+Receive the request again (this can take a while, because we're waiting for the<br>
+PeekLock to timeout)... Message 2</p>
+<p>Press [Enter] to exit.</p>
+<p><br>
+<br>
+</p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=62DBC035A4A8AD76676CA11B61CB6C59" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/cadc7690-6653-42f5-abd5-a62a894ac6feCombined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=46CB1877D3C0B7D6D06D21CECE7C9CAB" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Relayed Messaging Authentication: Shared Secret</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Relayed Messaging Authentication: Shared Secret</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Microsoft Azure, Service Bus
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Service Bus
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">9/2/2014</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Relayed-Messaging-92b04c02">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p>This sample demonstrates how to use an issuer name and issuer secret to authenticate with the Service Bus. The sample is similar to the Echo sample, with a few changes. Specifically, this sample adds a behavior in the ServiceHost (service side) and ChannelFactory
+ (client side).</p>
+<h1>Prerequisites</h1>
+<p>Create a Service Bus and ACS namespace. For all Service Bus namespaces that were created before August 2014, the Azure Portal automatically created a accompanying ACS namespace. After this date,&nbsp;the Azure Portal no longer creates the ACS namespace.
+ Use the New-AzureSBNamespace PowerShell cmdlet to create a Service Bus namespace that is accompanied by an ACS namespace.</p>
+<p>&nbsp;</p>
+<h1>Service</h1>
+<p>Please refer to the Echo sample for information about how the service is defined and configured.</p>
+<p>&nbsp;</p>
+<h1>Client</h1>
+<p>Please refer to the Echo sample for information about how the client is defined and configured.</p>
+<p>In this sample, both the client and the service use the same credential; therefore, no additional steps are required to grant the client access to listen or send a message to the service through the Service Bus. By default, a credential is granted with Listen,
+ Send, and Manage privileges within its own Service Bus service namespace.&nbsp; If the client is using a different credential than the service, a specific Access Control rule is needed for a client credential to gain Listen, Send or Manage privileges in the
+ Service Bus service namespace for the service. For more information about creating Access Control rules, please see the ManagementService sample from the Access Control Samples .</p>
+<p>&nbsp;</p>
+<h1>Building and Running the Sample</h1>
+<ol>
+<li>First, build the solution in Visual Studio or from the command line. To run the application, do the following:
+</li><li>From a command prompt, run the service (Service\bin\Debug\Service.exe). </li><li>&nbsp;When prompted, enter the Service Namespace, the issuer name (e.g. &quot;owner&quot;) and secret. When authorized, the service indicates that it is listening at the configured address.
+</li><li>&nbsp;From another command prompt, run the client (Client\bin\Debug\Client.exe).
+</li><li>&nbsp;When prompted, type your issuer name (e.g. &quot;owner&quot;), and the secret and the service namespace to which you want to connect. Enter a line of text to send to the service, then press Enter.
+</li><li>&nbsp;When finished, press Enter to exit the client and the service. </li></ol>
+<h2><br>
+Expected Output &ndash; Client</h2>
+<p>Enter the name of the Service Namespace you want to connect to: &lt;service-namespace&gt;<br>
+Your Issuer Name: owner<br>
+Your Issuer Secret: &lt;issuer-secret&gt;<br>
+Enter text to echo (or [Enter] to exit):<br>
+a<br>
+Server echoed: a<br>
+b<br>
+Server echoed: b<br>
+c<br>
+Server echoed: c</p>
+<p>&nbsp;</p>
+<h2>Expected Output &ndash; Service</h2>
+<p>Your Service Namespace: &lt;service-namespace&gt;<br>
+Your Issuer Name: owner<br>
+Your Issuer Secret: &lt;Issuer Secret&gt;<br>
+Service address: sb://&lt;service-namespace&gt;.servicebus.windows.net/SharedSecretAuthenticationService/[Enter] to exit<br>
+Echoing: a<br>
+Echoing: b<br>
+Echoing: c<br>
+&nbsp;<br>
+</p>
+
+</div>
+
+
+    </div>
+</body>
+</html>
