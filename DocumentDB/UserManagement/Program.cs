@@ -68,7 +68,7 @@
             DocumentCollection col2 = await GetOrCreateCollectionAsync(db.SelfLink, "COL2");
 
             // Insert two documents in to col1
-            Document doc1 = await client.CreateDocumentAsync(col1.DocumentsLink, new { id = "doc1", partitionKey = "partitionKey1" });
+                
             Document doc2 = await client.CreateDocumentAsync(col1.DocumentsLink, new { id = "doc2", partitionKey = "pk2" });
 
             // Insert one document in to col2
