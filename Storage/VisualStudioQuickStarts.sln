@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.25302.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBlobStorage", "DataBlobStorage\DataBlobStorage.csproj", "{85C81265-CA86-4C3D-93B9-7AC54FCD20AF}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTableStorage", "DataTableStorage\DataTableStorage.csproj", "{058D9126-C9C7-4CB2-B38A-5849F7BFC32D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataFileStorage", "DataFileStorage\DataFileStorage.csproj", "{6498E995-C760-4920-8FF8-4A3EE3842D20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobSAS", "BlobSAS\BlobSAS.csproj", "{A42CB5A6-8256-4E15-B256-20FEDBEC92D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{6498E995-C760-4920-8FF8-4A3EE3842D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6498E995-C760-4920-8FF8-4A3EE3842D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6498E995-C760-4920-8FF8-4A3EE3842D20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A42CB5A6-8256-4E15-B256-20FEDBEC92D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A42CB5A6-8256-4E15-B256-20FEDBEC92D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A42CB5A6-8256-4E15-B256-20FEDBEC92D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A42CB5A6-8256-4E15-B256-20FEDBEC92D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
