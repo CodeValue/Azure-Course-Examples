@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataFileStorage", "DataFile
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobSAS", "BlobSAS\BlobSAS.csproj", "{A42CB5A6-8256-4E15-B256-20FEDBEC92D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobAttributes", "BlobAttributes\BlobAttributes.csproj", "{B4532A33-E362-464E-894D-37698FDEC5F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A42CB5A6-8256-4E15-B256-20FEDBEC92D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A42CB5A6-8256-4E15-B256-20FEDBEC92D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A42CB5A6-8256-4E15-B256-20FEDBEC92D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4532A33-E362-464E-894D-37698FDEC5F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4532A33-E362-464E-894D-37698FDEC5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4532A33-E362-464E-894D-37698FDEC5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4532A33-E362-464E-894D-37698FDEC5F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
