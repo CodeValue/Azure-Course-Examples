@@ -23,6 +23,7 @@ namespace SimpleWebJob
                 Tracing = { ConsoleLevel = TraceLevel.Verbose },
                 StorageConnectionString = storageConn,
                 DashboardConnectionString = dashboardConn,
+                
             };
 
             // Other Options
