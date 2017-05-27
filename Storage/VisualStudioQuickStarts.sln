@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobSAS", "BlobSAS\BlobSAS.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobAttributes", "BlobAttributes\BlobAttributes.csproj", "{B4532A33-E362-464E-894D-37698FDEC5F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageQueueConsumer", "StorageQueueConsumer\StorageQueueConsumer.csproj", "{EF4E3627-CB4C-48BF-898D-D735A68664BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageQueueProducer", "StorageQueueProducer\StorageQueueProducer.csproj", "{11387D11-DB10-445F-935A-AFD8B457AE5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{B4532A33-E362-464E-894D-37698FDEC5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4532A33-E362-464E-894D-37698FDEC5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4532A33-E362-464E-894D-37698FDEC5F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF4E3627-CB4C-48BF-898D-D735A68664BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF4E3627-CB4C-48BF-898D-D735A68664BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF4E3627-CB4C-48BF-898D-D735A68664BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF4E3627-CB4C-48BF-898D-D735A68664BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11387D11-DB10-445F-935A-AFD8B457AE5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11387D11-DB10-445F-935A-AFD8B457AE5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11387D11-DB10-445F-935A-AFD8B457AE5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11387D11-DB10-445F-935A-AFD8B457AE5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -46,7 +46,7 @@ namespace DataFileStorage
         // Instructions: This sample can be run against Microsoft Azure Storage Service by updating the App.Config with your AccountName and AccountKey. 
         // 
         // To run the sample using the Storage Service     
-        //      1. Create a Storage Account through the Azure Portal and provide your [AccountName] and [AccountKey] in 
+        //      1. Create a Storage Account through the Azure Portal and provide your [AcoountName] and [AcoountKey] in 
         //         the App.Config file. See http://go.microsoft.com/fwlink/?LinkId=325277 for more information
         //      2. Set breakpoints and run the project using F10. 
         // 
