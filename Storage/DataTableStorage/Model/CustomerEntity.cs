@@ -13,10 +13,11 @@
 // organization, product, domain name, email address, logo, person,
 // places, or events is intended or should be inferred.
 //----------------------------------------------------------------------------------
-namespace DataTableStorageSample.Model
-{
-    using Microsoft.WindowsAzure.Storage.Table;
 
+using Microsoft.WindowsAzure.Storage.Table;
+
+namespace DataTableStorage.Model
+{
     /// <summary>
     /// Define a Customer entity for demonstrating the Table Service. For the purposes of the sample we use the 
     /// customer's first name as the row key and last name as the partition key. In reality this would not be a good

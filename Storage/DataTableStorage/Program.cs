@@ -14,17 +14,16 @@
 // places, or events is intended or should be inferred.
 //----------------------------------------------------------------------------------
 
-namespace DataTableStorageSample
-{
-    using DataTableStorageSample.Model;
-    using Microsoft.WindowsAzure;
-    using Microsoft.WindowsAzure.Storage;
-    using Microsoft.WindowsAzure.Storage.Table;
-    using System;
-    using System.Collections.Generic;
-    using System.Net;
-    using System.Threading.Tasks; 
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using DataTableStorage.Model;
+using Microsoft.Azure;
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Table;
 
+namespace DataTableStorage
+{
     /// <summary>
     /// Azure Table Service Sample - Demonstrate how to perform common tasks using the Microsoft Azure Table storage 
     /// including creating a table, CRUD operations, batch operations and different querying techniques. 

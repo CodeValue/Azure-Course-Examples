@@ -15,18 +15,16 @@
 //----------------------------------------------------------------------------------
 
 
-namespace DataBlobStorageSample
-{
+using System;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.Azure;
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Blob;
 
-    using Microsoft.WindowsAzure;
-    using Microsoft.WindowsAzure.Storage;
-    using Microsoft.WindowsAzure.Storage.Blob;
-    using System;
-    using System.Collections.Generic;
-    using System.IO;
-    using System.Linq;
-    using System.Threading.Tasks;
-    
+namespace DataBlobStorage
+{
     /// <summary>
     /// Azure Storage Blob Sample - Demonstrate how to use the Blob Storage service. 
     /// Blob storage stores unstructured data such as text, binary data, documents or media files. 
@@ -84,7 +82,7 @@ namespace DataBlobStorageSample
         /// <summary>
         /// Basic operations to work with block blobs
         /// </summary>
-        /// <returns>Task<returns>
+        /// <returns>Task</returns>
         private static async Task BasicStorageBlockBlobOperationsAsync()
         {
             const string ImageToUpload = "HelloWorld.png";
@@ -119,7 +117,7 @@ namespace DataBlobStorageSample
             // Upload a BlockBlob to the newly created container
             Console.WriteLine("2. Uploading BlockBlob");
             CloudBlockBlob blockBlob = container.GetBlockBlobReference(ImageToUpload);
-            await blockBlob.UploadFromFileAsync(ImageToUpload, FileMode.Open);
+            await blockBlob.UploadFromFileAsync(ImageToUpload);
 
             // List all the blobs in the container 
             Console.WriteLine("3. List Blobs in Container");

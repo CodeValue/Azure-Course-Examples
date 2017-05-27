@@ -13,14 +13,15 @@
 // organization, product, domain name, email address, logo, person,
 // places, or events is intended or should be inferred.
 //----------------------------------------------------------------------------------
-namespace DataStorageQueueSample
+
+using System;
+using System.Threading.Tasks;
+using Microsoft.Azure;
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Queue;
+
+namespace DataStorageQueue
 {
-    using Microsoft.WindowsAzure;
-    using Microsoft.WindowsAzure.Storage;
-    using Microsoft.WindowsAzure.Storage.Queue;
-    using System;
-    using System.Threading.Tasks;
-     
     /// <summary>
     /// Azure Queue Service Sample - The Queue Service provides reliable messaging for workflow processing and for communication 
     /// between loosely coupled components of cloud services. This sample demonstrates how to perform common tasks including  
