@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicEventHubSample", "source\BasicEventHubSample.csproj", "{AE7AF0E7-5365-446E-A7ED-7C2DB65760FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicEventHubSample", "source\BasicEventHubSample.csproj", "{389E0848-6E47-4741-892B-FA03174333BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AE7AF0E7-5365-446E-A7ED-7C2DB65760FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AE7AF0E7-5365-446E-A7ED-7C2DB65760FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{389E0848-6E47-4741-892B-FA03174333BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{389E0848-6E47-4741-892B-FA03174333BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

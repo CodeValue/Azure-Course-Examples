@@ -23,39 +23,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9. Event Hubs", "9. Event H
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagingWithQueues", "1. Getting Started with Queues\C#\MessagingWithQueues\MessagingWithQueues.csproj", "{247F0154-3F6B-409B-BEBA-1BF9302D3B9E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{62B340B1-3FE5-4A46-8296-0DF777EE6E28}"
-	ProjectSection(SolutionItems) = preProject
-		2. Dead Letter Queue\C#\Readme.htm = 2. Dead Letter Queue\C#\Readme.htm
-		4. Getting Started with Relay\C#\Readme.htm = 4. Getting Started with Relay\C#\Readme.htm
-		7. Transactions\C#\Readme.htm = 7. Transactions\C#\Readme.htm
-		8. Shared Access Signatures\C#\Readme.htm = 8. Shared Access Signatures\C#\Readme.htm
-	EndProjectSection
-EndProject
+
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sender", "2. Dead Letter Queue\C#\Sender\Sender.csproj", "{9F78C49A-31BF-48C1-9A51-046C1D068F81}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Receiver", "2. Dead Letter Queue\C#\Receiver\Receiver.csproj", "{AE7AF0E7-5365-446E-A7ED-7C2DB65760FF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{62B340B1-3FE5-4A46-8296-0DF777EE6E28}"
-	ProjectSection(SolutionItems) = preProject
-		2. Dead Letter Queue\C#\Readme.htm = 2. Dead Letter Queue\C#\Readme.htm
-		4. Getting Started with Relay\C#\Readme.htm = 4. Getting Started with Relay\C#\Readme.htm
-		7. Transactions\C#\Readme.htm = 7. Transactions\C#\Readme.htm
-		8. Shared Access Signatures\C#\Readme.htm = 8. Shared Access Signatures\C#\Readme.htm
-	EndProjectSection
-EndProject
+
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagingWithTopics", "3. Getting Started with Topics\C#\MessagingWithTopics\MessagingWithTopics.csproj", "{0EDDCDEF-FAFD-41ED-B134-A09BB5091A27}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{62B340B1-3FE5-4A46-8296-0DF777EE6E28}"
-	ProjectSection(SolutionItems) = preProject
-		2. Dead Letter Queue\C#\Readme.htm = 2. Dead Letter Queue\C#\Readme.htm
-		4. Getting Started with Relay\C#\Readme.htm = 4. Getting Started with Relay\C#\Readme.htm
-		7. Transactions\C#\Readme.htm = 7. Transactions\C#\Readme.htm
-		8. Shared Access Signatures\C#\Readme.htm = 8. Shared Access Signatures\C#\Readme.htm
-	EndProjectSection
+
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "4. Getting Started with Relay\Service\Service.csproj", "{27CF1BE6-0280-46F8-BB19-BC7147E02B6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "4. Getting Started with Relay\C#\Service\Service.csproj", "{27CF1BE6-0280-46F8-BB19-BC7147E02B6A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "4. Getting Started with Relay\C#\Client\Client.csproj", "{3BFACE4B-B4A5-42FC-A029-62F42B3B82B8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "4. Getting Started with Relay\Client\Client.csproj", "{3BFACE4B-B4A5-42FC-A029-62F42B3B82B8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuplicateDetection", "5. Duplicate Message Detection\C#\DuplicateDetection.csproj", "{C0705BFD-2855-4753-83FA-0CB17C3AE5E6}"
 EndProject
@@ -65,24 +44,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Receiver", "6. Session Mess
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sender", "6. Session Messages\C#\Sender\Sender.csproj", "{1D24A8EE-B221-48DF-B494-37AEDCF411E0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{62B340B1-3FE5-4A46-8296-0DF777EE6E28}"
-	ProjectSection(SolutionItems) = preProject
-		2. Dead Letter Queue\C#\Readme.htm = 2. Dead Letter Queue\C#\Readme.htm
-		4. Getting Started with Relay\C#\Readme.htm = 4. Getting Started with Relay\C#\Readme.htm
-		7. Transactions\C#\Readme.htm = 7. Transactions\C#\Readme.htm
-		8. Shared Access Signatures\C#\Readme.htm = 8. Shared Access Signatures\C#\Readme.htm
-	EndProjectSection
-EndProject
+
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transactions", "7. Transactions\C#\Transactions.csproj", "{636A3ADE-4A42-460D-84EC-F7BD1A24A042}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{62B340B1-3FE5-4A46-8296-0DF777EE6E28}"
-	ProjectSection(SolutionItems) = preProject
-		2. Dead Letter Queue\C#\Readme.htm = 2. Dead Letter Queue\C#\Readme.htm
-		4. Getting Started with Relay\C#\Readme.htm = 4. Getting Started with Relay\C#\Readme.htm
-		7. Transactions\C#\Readme.htm = 7. Transactions\C#\Readme.htm
-		8. Shared Access Signatures\C#\Readme.htm = 8. Shared Access Signatures\C#\Readme.htm
-	EndProjectSection
-EndProject
+
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "8. Shared Access Signatures\C#\Service\Service.csproj", "{A79D70C8-F98F-4A6A-A8CC-E2802BD60E06}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "8. Shared Access Signatures\C#\Client\Client.csproj", "{DA0831E8-3878-473E-881E-3F01C296919A}"

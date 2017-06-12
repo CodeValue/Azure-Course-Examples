@@ -42,7 +42,10 @@ namespace Microsoft.ServiceBus.Samples
         {
             if (args.Length < 2)
             {
-                throw new ArgumentException("Incorrect number of arguments. Expected 3 args <eventhubname> <NumberOfMessagesToSend> <NumberOfPartitions>", args.ToString());
+                Console.WriteLine("Incorrect number of arguments. Expected 3 args <eventhubname> <NumberOfMessagesToSend> <NumberOfPartitions>", args.ToString());
+                eventHubName = "events";
+                numberOfMessages = 200;
+                numberOfPartitions = 2;
             }
             else
             {
@@ -50,7 +53,7 @@ namespace Microsoft.ServiceBus.Samples
                 Console.WriteLine("ehnanme: " + eventHubName);
 
                 numberOfMessages = Int32.Parse(args[1]);
-                Console.WriteLine("NumberOfmessage: " + numberOfMessages);
+                Console.WriteLine("NumberOfmessages: " + numberOfMessages);
 
                 numberOfPartitions = Int32.Parse(args[2]);
                 Console.WriteLine("numberOfPartitions: " + numberOfPartitions);

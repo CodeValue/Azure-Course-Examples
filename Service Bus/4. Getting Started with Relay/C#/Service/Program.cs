@@ -33,7 +33,7 @@ namespace Microsoft.ServiceBus.Samples
             sharedSecretServiceBusCredential.TokenProvider = TokenProvider.CreateSharedSecretTokenProvider(issuerName, issuerSecret);
             
             ServiceHost host = new ServiceHost(typeof(PingService), address);
-
+            host.OpenTimeout=TimeSpan.FromMinutes(5);
             foreach (ServiceEndpoint endpoint in host.Description.Endpoints)
             {
                 endpoint.Behaviors.Add(sharedSecretServiceBusCredential);

@@ -12,8 +12,8 @@ namespace MyFirstDocumentDBApp
 {
     class Program
     {
-        private const string EndpointUri = "[EndPointUrl]";
-        private const string PrimaryKey = "[DocumentPrimaryKey]";
+        private const string EndpointUri = "https://cosmoscvintro2017.documents.azure.com:443/";
+        private const string PrimaryKey = "GBKXUwSFaySCnTVUaEqSNUTkOSRvGDvcJk4DoMJErTUwdNqsie0wprENJPfOCQuQn6mnjG5GMiAONr00YGqqag==";
         private DocumentClient client;
 
         static void Main(string[] args)
@@ -57,10 +57,12 @@ namespace MyFirstDocumentDBApp
                 await client.CreateDatabaseAsync(new Database() {Id = databaseName});
             }
 
-            var documentCollection = new DocumentCollection();
-            documentCollection.Id = collectionName;
-            documentCollection.IndexingPolicy=new IndexingPolicy(new RangeIndex(DataType.String) {Precision = -1});
-            var response=await client.CreateDocumentCollectionAsync(UriFactory.CreateDatabaseUri(databaseName),
+            var documentCollection = new DocumentCollection
+            {
+                Id = collectionName,
+                IndexingPolicy = new IndexingPolicy(new RangeIndex(DataType.String) {Precision = -1})
+            };
+            var response = await client.CreateDocumentCollectionAsync(UriFactory.CreateDatabaseUri(databaseName),
                 documentCollection,
                 new RequestOptions()
                 {

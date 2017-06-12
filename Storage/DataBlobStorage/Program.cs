@@ -58,7 +58,7 @@ namespace DataBlobStorage
         // To run the sample using the Storage Service
         //      1. Open the app.config file and comment out the connection string for the emulator (UseDevelopmentStorage=True) and
         //         uncomment the connection string for the storage service (AccountName=[]...)
-        //      2. Create a Storage Account through the Azure Portal and provide your [AcoountName] and [AcoountKey] in 
+        //      2. Create a Storage Account through the Azure Portal and provide your cvstorageintro and 8oRv8a91d1d4selO3a0ptAcptHbIlgr4bxe45Wm+vLmhwercTUXyF+uDGPC6M3xMj4xcgJisBhva3j6/rfYcOw== in 
         //         the App.Config file. See http://go.microsoft.com/fwlink/?LinkId=325277 for more information
         //      3. Set breakpoints and run the project using F10. 
         // 
